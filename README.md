@@ -26,6 +26,6 @@ João Paulo Carneiro Aramuni
                    Quero cadastrar e consultar informações dos automóveis disponíveis para aluguel, para oferecer opções precisas aos clientes.
                    Quero vincular contratos de crédito aos pedidos de aluguel, para formalizar o financiamento do aluguel.
 
-
+# Diagrama de pacotes 
 
 
