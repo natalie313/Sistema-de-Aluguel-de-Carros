@@ -1,6 +1,6 @@
 # Sistema de Aluguel de Carros
 
-Iremos desenvolver um sistema web para gestão de aluguéis de carros, permitindo que clientes e agentes realizem, modifiquem e cancelem pedidos de forma online. O sistema atende aos diferentes perfis de usuários e integra funcionalidades financeiras, além de gerenciar dados detalhados dos contratantes, veículos e contratos de crédito. A proposta busca oferecer uma solução eficiente e segura, facilitando a gestão e o relacionamento entre clientes e agentes.
+A gestão de aluguéis de veículos é uma atividade fundamental para empresas do setor, pois garante o controle adequado de clientes, contratos e automóveis disponíveis. Tradicionalmente, esse processo pode ser burocrático e suscetível a falhas manuais, o que evidencia a importância da automatização por meio de sistemas computacionais. Este trabalho tem como objetivo desenvolver um sistema web de gestão de aluguéis, que permita a clientes e agentes realizar, modificar e cancelar pedidos, além de integrar funcionalidades financeiras e assegurar o gerenciamento detalhado de contratantes, veículos e contratos de crédito.
 
 # Integrantes
 Giovanna Lima Torres Guasch
@@ -11,6 +11,9 @@ Paloma Dias de Carvalho
 
 # Professor
 João Paulo Carneiro Aramuni
+
+# Caso de Uso
+
 
 # Histórias de Usuário
 
@@ -26,8 +29,13 @@ João Paulo Carneiro Aramuni
                    Quero cadastrar e consultar informações dos automóveis disponíveis para aluguel, para oferecer opções precisas aos clientes.
                    Quero vincular contratos de crédito aos pedidos de aluguel, para formalizar o financiamento do aluguel.
 
-# Diagrama de pacotes 
+# Diagrama de Classes
 
-
+# Diagrama de Pacote
 
 <img width="1047" height="711" alt="image" src="" />
+
+# Tecnologias Utilizadas
+
+
+# Linguagens Utilizadas
