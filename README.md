@@ -14,7 +14,7 @@ João Paulo Carneiro Aramuni
 
 ## Caso de Uso
 
-<img width="1082" alt="image" src="https://github.com/user-attachments/assets/fd940b5e-07cb-45b9-bee5-aa2c117cc1b1" />
+<img width="1082" height="717"  alt="image" src="https://github.com/user-attachments/assets/fd940b5e-07cb-45b9-bee5-aa2c117cc1b1" />
 
 
 ## Histórias de Usuário
@@ -32,7 +32,7 @@ João Paulo Carneiro Aramuni
                    Quero vincular contratos de crédito aos pedidos de aluguel, para formalizar o financiamento do aluguel.
 
 ## Diagrama de Classes
-<img width="1047" height="711" alt="image" src="https://github.com/natalie313/Sistema-de-Aluguel-de-Carros/blob/main/01.%20Documenta%C3%A7%C3%A3o/Diagrama%20.jpg" />
+<img  alt="image" src="https://github.com/natalie313/Sistema-de-Aluguel-de-Carros/blob/main/01.%20Documenta%C3%A7%C3%A3o/Diagrama%20.jpg" />
 
 ## Diagrama de Pacote
 
