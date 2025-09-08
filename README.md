@@ -35,7 +35,7 @@ João Paulo Carneiro Aramuni
 
 ## Diagrama de Pacote
 
-<img width="1047" height="711" alt="image" src="" />
+<img width="1047" height="711" alt="image" src="https://github.com/natalie313/Sistema-de-Aluguel-de-Carros/blob/main/01.%20Documenta%C3%A7%C3%A3o/Diagrama%20de%20pacotes.jpg" />
 
 ## Tecnologias Utilizadas
 
