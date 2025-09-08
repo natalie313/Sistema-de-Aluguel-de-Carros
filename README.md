@@ -32,6 +32,7 @@ João Paulo Carneiro Aramuni
                    Quero vincular contratos de crédito aos pedidos de aluguel, para formalizar o financiamento do aluguel.
 
 ## Diagrama de Classes
+<img width="1047" height="711" alt="image" src="https://github.com/natalie313/Sistema-de-Aluguel-de-Carros/blob/main/01.%20Documenta%C3%A7%C3%A3o/Diagrama%20.jpg" />
 
 ## Diagrama de Pacote
 
