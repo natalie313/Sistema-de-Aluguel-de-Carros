@@ -14,8 +14,7 @@ João Paulo Carneiro Aramuni
 
 ## Caso de Uso
 
-<img width="1082" height="717"  alt="image" src="https://github.com/user-attachments/assets/fd940b5e-07cb-45b9-bee5-aa2c117cc1b1" />
-
+<img width="1063" height="711" alt="image" src="https://github.com/user-attachments/assets/4c5003a6-6666-4ace-8e82-6ee670969898" />
 
 ## Histórias de Usuário
 
