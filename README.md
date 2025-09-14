@@ -43,11 +43,16 @@ João Paulo Carneiro Aramuni
 * HS04.5 – Como agente, quero vincular contratos de crédito aos pedidos de aluguel para formalizar o financiamento.
 
 ## Diagrama de Classes
-<img  alt="image" src="https://github.com/natalie313/Sistema-de-Aluguel-de-Carros/blob/main/01.%20Documenta%C3%A7%C3%A3o/Diagrama%20.jpg" />
+<img  alt="image" src="https://github.com/natalie313/Sistema-de-Aluguel-de-Carros/blob/main/01.%20Documenta%C3%A7%C3%A3o/Diagrama-classe-corrigido.png" />
 
 ## Diagrama de Pacote
 
-<img width="1047" height="711" alt="image" src="https://github.com/natalie313/Sistema-de-Aluguel-de-Carros/blob/main/01.%20Documenta%C3%A7%C3%A3o/Diagrama%20de%20pacotes.jpg" />
+<img width="1047" height="711" alt="image" src="https://github.com/natalie313/Sistema-de-Aluguel-de-Carros/blob/main/01.%20Documenta%C3%A7%C3%A3o/Diagrama-de-pacotes-corrigido.png" />
+
+
+## Diagrama de Componentes
+
+<img width="1047" height="711" alt="image" src="https://github.com/natalie313/Sistema-de-Aluguel-de-Carros/blob/main/01.%20Documenta%C3%A7%C3%A3o/Diagrama-de-componentes.png" />
 
 ## Tecnologias Utilizadas
 
