@@ -18,17 +18,29 @@ João Paulo Carneiro Aramuni
 
 ## Histórias de Usuário
 
-* (HS01) Cadastro de Usuário - Como visitante do sistema, quero me cadastrar para obter acesso e assim usar as funcionalidades disponíveis.
-* (HS02) Cliente - Como cliente cadastrado, quero inserir um pedido de aluguel de automóvel para reservar um veículo conforme minhas necessidades.
-                   Quero modificar os detalhes do meu pedido de aluguel para ajustar informações antes da aprovação do contrato.
-                   Quero consultar o status e os detalhes dos meus pedidos para acompanhar o andamento do aluguel solicitado.
-                   Quero cancelar um pedido de aluguel que ainda não foi aprovado para desistir do aluguel caso necessário.
+* HS01 – Cadastro de Usuário
+    HS01.1 – Como visitante, quero me cadastrar no sistema para obter acesso.
+    HS01.2 – Como visitante, quero receber confirmação do meu cadastro (e-mail/senha) para validar meu acesso.
 
-* (HS03) Agente (Empresa/Banco) - Como agente representante de empresa ou banco, quero avaliar e modificar pedidos de aluguel, para aprovar, rejeitar ou ajustar pedidos conforme análise financeira.
+* HS02 – Cliente
+  HS02.1 – Como cliente, quero inserir um pedido de aluguel de automóvel para reservar um veículo.
+  HS02.2 – Como cliente, quero modificar os detalhes do meu pedido de aluguel antes da aprovação, para ajustar informações.
+  HS02.3 – Como cliente, quero consultar o status dos meus pedidos para acompanhar o andamento.
+  HS02.4 – Como cliente, quero visualizar os detalhes do meu pedido (carro, período, valor, status).
+  HS02.5 – Como cliente, quero cancelar um pedido de aluguel que ainda não foi aprovado para desistir do processo.
 
-* (HS04) Agente - Como agente, quero registrar e consultar dados detalhados dos contratantes, para realizar a análise financeira e validar as informações cadastrais.
-                   Quero cadastrar e consultar informações dos automóveis disponíveis para aluguel, para oferecer opções precisas aos clientes.
-                   Quero vincular contratos de crédito aos pedidos de aluguel, para formalizar o financiamento do aluguel.
+* HS03 – Agente (Empresa/Banco)
+  HS03.1 – Como agente, quero avaliar pedidos de aluguel para verificar se podem ser aprovados ou rejeitados.
+  HS03.2 – Como agente, quero modificar pedidos de aluguel para ajustar informações antes da aprovação.
+  HS03.3 – Como agente, quero aprovar ou rejeitar pedidos de aluguel conforme análise financeira.
+  
+* HS04 – Agente (Gestão de dados e contratos)
+  HS04.1 – Como agente, quero registrar dados detalhados dos contratantes para manter o cadastro atualizado.
+  HS04.2 – Como agente, quero consultar dados dos contratantes para realizar análise financeira.
+  HS04.3 – Como agente, quero cadastrar informações de automóveis disponíveis para aluguel.
+  HS04.4 – Como agente, quero consultar os automóveis disponíveis para oferecer opções ao cliente.
+
+* HS04.5 – Como agente, quero vincular contratos de crédito aos pedidos de aluguel para formalizar o financiamento.
 
 ## Diagrama de Classes
 <img  alt="image" src="https://github.com/natalie313/Sistema-de-Aluguel-de-Carros/blob/main/01.%20Documenta%C3%A7%C3%A3o/Diagrama%20.jpg" />
