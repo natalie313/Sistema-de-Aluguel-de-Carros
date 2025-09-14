@@ -19,8 +19,8 @@ João Paulo Carneiro Aramuni
 ## Histórias de Usuário
 
 * HS01 – Cadastro de Usuário
-    HS01.1 – Como visitante, quero me cadastrar no sistema para obter acesso.
-    HS01.2 – Como visitante, quero receber confirmação do meu cadastro (e-mail/senha) para validar meu acesso.
+    - HS01.1 – Como visitante, quero me cadastrar no sistema para obter acesso.
+   -  HS01.2 – Como visitante, quero receber confirmação do meu cadastro (e-mail/senha) para validar meu acesso.
 
 * HS02 – Cliente
   HS02.1 – Como cliente, quero inserir um pedido de aluguel de automóvel para reservar um veículo.
