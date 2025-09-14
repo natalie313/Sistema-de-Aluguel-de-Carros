@@ -23,22 +23,22 @@ João Paulo Carneiro Aramuni
    -  HS01.2 – Como visitante, quero receber confirmação do meu cadastro (e-mail/senha) para validar meu acesso.
 
 * HS02 – Cliente
-  HS02.1 – Como cliente, quero inserir um pedido de aluguel de automóvel para reservar um veículo.
-  HS02.2 – Como cliente, quero modificar os detalhes do meu pedido de aluguel antes da aprovação, para ajustar informações.
-  HS02.3 – Como cliente, quero consultar o status dos meus pedidos para acompanhar o andamento.
-  HS02.4 – Como cliente, quero visualizar os detalhes do meu pedido (carro, período, valor, status).
-  HS02.5 – Como cliente, quero cancelar um pedido de aluguel que ainda não foi aprovado para desistir do processo.
+  - HS02.1 – Como cliente, quero inserir um pedido de aluguel de automóvel para reservar um veículo.
+  - HS02.2 – Como cliente, quero modificar os detalhes do meu pedido de aluguel antes da aprovação, para ajustar informações.
+  - HS02.3 – Como cliente, quero consultar o status dos meus pedidos para acompanhar o andamento.
+  - HS02.4 – Como cliente, quero visualizar os detalhes do meu pedido (carro, período, valor, status).
+  - HS02.5 – Como cliente, quero cancelar um pedido de aluguel que ainda não foi aprovado para desistir do processo.
 
 * HS03 – Agente (Empresa/Banco)
-  HS03.1 – Como agente, quero avaliar pedidos de aluguel para verificar se podem ser aprovados ou rejeitados.
-  HS03.2 – Como agente, quero modificar pedidos de aluguel para ajustar informações antes da aprovação.
-  HS03.3 – Como agente, quero aprovar ou rejeitar pedidos de aluguel conforme análise financeira.
+  - HS03.1 – Como agente, quero avaliar pedidos de aluguel para verificar se podem ser aprovados ou rejeitados.
+  - HS03.2 – Como agente, quero modificar pedidos de aluguel para ajustar informações antes da aprovação.
+  - HS03.3 – Como agente, quero aprovar ou rejeitar pedidos de aluguel conforme análise financeira.
   
 * HS04 – Agente (Gestão de dados e contratos)
-  HS04.1 – Como agente, quero registrar dados detalhados dos contratantes para manter o cadastro atualizado.
-  HS04.2 – Como agente, quero consultar dados dos contratantes para realizar análise financeira.
-  HS04.3 – Como agente, quero cadastrar informações de automóveis disponíveis para aluguel.
-  HS04.4 – Como agente, quero consultar os automóveis disponíveis para oferecer opções ao cliente.
+  - HS04.1 – Como agente, quero registrar dados detalhados dos contratantes para manter o cadastro atualizado.
+  - HS04.2 – Como agente, quero consultar dados dos contratantes para realizar análise financeira.
+  - HS04.3 – Como agente, quero cadastrar informações de automóveis disponíveis para aluguel.
+  - HS04.4 – Como agente, quero consultar os automóveis disponíveis para oferecer opções ao cliente.
 
 * HS04.5 – Como agente, quero vincular contratos de crédito aos pedidos de aluguel para formalizar o financiamento.
 
