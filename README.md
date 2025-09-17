@@ -56,11 +56,17 @@ João Paulo Carneiro Aramuni
 
 ## Tecnologias Utilizadas
 Figma
+
 PlantUML
+
 React
+
 React Router
+
 TailwindCSS
+
 Axios
+
 json-server
 
 ## Linguagens Utilizadas
