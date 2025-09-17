@@ -7,7 +7,6 @@ export default function Shell({ children }) {
 
   return (
     <div className="min-h-screen flex flex-col bg-gray-50">
-      {/* Header sempre visível; menu só fora do login */}
       <header className="bg-gradient-to-r from-purple-600 to-purple-700 text-white">
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
           <div className="flex items-center gap-2 font-semibold text-lg">
