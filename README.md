@@ -54,6 +54,11 @@ João Paulo Carneiro Aramuni
 
 <img width="1047" height="711" alt="image" src="https://github.com/natalie313/Sistema-de-Aluguel-de-Carros/blob/main/01.%20Documenta%C3%A7%C3%A3o/Diagrama-de-componentes.png" />
 
+
+## Diagrama de Implantação
+
+<img width="1047" height="711" alt="image" src="htthttps://github.com/natalie313/Sistema-de-Aluguel-de-Carros/blob/main/01.%20Documentação/Diagrama_de_Implantação.jpeg" />
+
 ## Tecnologias Utilizadas
 Figma
 
