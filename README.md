@@ -56,7 +56,7 @@ João Paulo Carneiro Aramuni
 
 ## DER
 
-<img width="1047" height="711" alt="image" src="https://github.com/natalie313/Sistema-de-Aluguel-de-Carros/blob/main/01.%20Documentação/DER.jpg" />
+<img width="1047" height="1500" alt="image" src="https://github.com/natalie313/Sistema-de-Aluguel-de-Carros/blob/main/01.%20Documentação/DER.jpg" />
 
 
 ## Tecnologias Utilizadas
