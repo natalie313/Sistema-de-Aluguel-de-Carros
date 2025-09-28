@@ -58,12 +58,15 @@ João Paulo Carneiro Aramuni
 
 <img  alt="image" src="https://github.com/natalie313/Sistema-de-Aluguel-de-Carros/blob/main/01.%20Documentação/DER.jpg" />
 
+Link de acesso ao Vercel: https://sistema-de-aluguel-de-carros-btubz0p0l.vercel.app/login
 
 ## Tecnologias Utilizadas
 
-PlantUML
-
-React
-
-TailwindCSS
+- **Front-end**: React.js + Tailwind CSS  
+- **Back-end**: Spring Boot  
+- **Deploy**:  
+  - Vercel (front-end)  
+  - Render (back-end)  
+- **Modelagem**: PlantUML (diagramas UML)  
+- **Controle de versão**: GitHub 
 
