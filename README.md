@@ -69,6 +69,39 @@ João Paulo Carneiro Aramuni
 - **Modelagem**: PlantUML (diagramas UML)  
 - **Controle de versão**: GitHub
 
+## Instruções de Uso
+Para utilizar o sistema, siga os passos abaixo:
+
+- Acesse a Tela de Login: Inicie acessando o sistema pela página de login.
+
+- **Cadastro de Novo Usuário:**
+
+- Caso não possua uma conta, clique em "Cadastrar-se" para ser redirecionado à página de cadastro.
+
+- Preencha os campos com seus dados pessoais, como nome, CPF, endereço e informações de renda.
+
+- Clique em "Salvar" para concluir o cadastro. O sistema o redirecionará para a tela de login após o sucesso.
+
+- **Login no Sistema:**
+  
+- Na tela de login, insira seu CPF ou e-mail e a senha cadastrada.
+
+- Ao entrar, você será direcionado ao menu principal do cliente.
+
+- **Funcionalidades do Cliente:**
+
+- Criar Pedido: Solicite um novo aluguel de veículo preenchendo os detalhes do carro, período e informações de crédito, se aplicável.
+
+- Consultar Pedido: Acompanhe o status e os detalhes dos seus pedidos de aluguel. Nesta tela, é possível editar ou excluir um pedido.
+
+- Modificar/Cancelar: Gerencie os pedidos existentes.
+
+- Acessar Conta: Visualize e edite seus dados cadastrais e preferências.
+
+- **Painel do Agente:**
+
+- Há também um painel para agentes, onde é possível visualizar todos os pedidos e atualizar seus status (ex: Pendente, Andamento, Realizado, Finalizado).
+
 ## Demonstração
 🎥 [Clique aqui para ver o vídeo](https://www.youtube.com/watch?v=WzRKYrTnPro)
 
