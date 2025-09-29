@@ -70,6 +70,7 @@ João Paulo Carneiro Aramuni
 - **Controle de versão**: GitHub
 
 ## Demonstração
-(https://github.com/natalie313/Sistema-de-Aluguel-de-Carros/blob/main/01.%20Documenta%C3%A7%C3%A3o/Grava%C3%A7%C3%A3o.mp4)
+
+[![Ver vídeo]((https://github.com/natalie313/Sistema-de-Aluguel-de-Carros/blob/main/01.%20Documenta%C3%A7%C3%A3o/Grava%C3%A7%C3%A3o.mp4))
 
 
