@@ -62,11 +62,13 @@ João Paulo Carneiro Aramuni
 
 ## Tecnologias Utilizadas
 
-- **Front-end**: React.js + Tailwind CSS  
-- **Back-end**: Spring Boot  
+- **Front-end**: HTML, CSS e JavaScript  
+- **Back-end**: PHP
 - **Deploy**:  
   - Vercel (front-end)  
-  - Render (back-end)  
 - **Modelagem**: PlantUML (diagramas UML)  
-- **Controle de versão**: GitHub 
+- **Controle de versão**: GitHub
+
+## Funcionalidades
+
 
