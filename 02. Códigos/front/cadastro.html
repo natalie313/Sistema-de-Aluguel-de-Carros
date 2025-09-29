@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro</title>
+  <link rel="stylesheet" href="cadastro.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor"
+           stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+           class="icon" viewBox="0 0 24 24">
+        <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+        <circle cx="9" cy="7" r="4"/>
+        <line x1="19" y1="8" x2="19" y2="14"/>
+        <line x1="22" y1="11" x2="16" y2="11"/>
+      </svg>
+      <h2>Cadastro</h2>
+    </div>
+
+    <form id="cadastroForm" class="form-grid">
+      <input name="nome" placeholder="Nome" required>
+      <input name="cpf" placeholder="CPF" required>
+      <input name="rg" placeholder="RG">
+      <input name="endereco" placeholder="Endereço">
+      <input name="profissao" placeholder="Profissão">
+      <input name="empresa" placeholder="Empresa">
+      <input name="renda1" placeholder="Renda 1">
+      <input name="renda2" placeholder="Renda 2">
+      <input name="renda3" placeholder="Renda 3">
+
+      <div class="buttons">
+        <button type="submit" class="btn-salvar">Salvar</button>
+        <a href="login.html" class="btn-cancelar">Cancelar</a>
+      </div>
+    </form>
+
+    <div id="ok" class="ok"></div>
+    <div id="erro" class="erro"></div>
+  </div>
+
+  <script src="cadastro.js"></script>
+</body>
+</html>

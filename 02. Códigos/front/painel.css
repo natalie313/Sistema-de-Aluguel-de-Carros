@@ -1,0 +1,107 @@
+/* Reset básico */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Container centralizado */
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* Card */
+.card {
+  background-color: white;
+  border-radius: 1rem;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  padding: 24px;
+}
+
+/* Header do card */
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.card-header h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  color: #7c3aed; /* roxo */
+}
+
+/* Loading */
+.loading {
+  color: #777;
+  margin-bottom: 16px;
+}
+
+/* Tabela */
+.pedidos-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.pedidos-table th,
+.pedidos-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.pedidos-table th {
+  background-color: #f3f3f3;
+}
+
+.pedidos-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.pedidos-table tr:nth-child(odd) {
+  background-color: #fff;
+}
+
+/* Botões */
+.actions {
+  display: flex;
+  gap: 8px;
+}
+
+.btn-outline {
+  padding: 4px 8px;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  background-color: white;
+  cursor: pointer;
+}
+
+.btn-outline:hover {
+  background-color: #f0f0f0;
+}
+
+.btn-primary {
+  padding: 4px 8px;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #7c3aed;
+  color: white;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #6b21a8;
+}

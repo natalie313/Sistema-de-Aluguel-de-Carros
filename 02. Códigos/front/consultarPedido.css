@@ -1,0 +1,67 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f9;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+  padding: 20px;
+  border: 1px solid #ddd;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.header .icon {
+  color: #7e3af2;
+  font-size: 18px;
+}
+
+.header h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.loading {
+  color: #666;
+  font-size: 14px;
+}
+
+.tabela {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.tabela th, .tabela td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.tabela thead {
+  background: #f3f3f3;
+  font-weight: bold;
+}
+
+.tabela tr:nth-child(even) {
+  background: #fafafa;
+}
+
+.hidden {
+  display: none;
+}

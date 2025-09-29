@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Painel do Agente</title>
+<link rel="stylesheet" href="painel.css">
+<style>
+  select { padding: 6px; border-radius: 6px; }
+  .btn { padding: 6px 12px; border-radius: 6px; margin-left: 6px; cursor: pointer; }
+  .btn-save { background: #7e3af2; color: white; border: none; }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="card">
+    <div class="card-header">
+      <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m1-4h2a2 2 0 012 2v10a2 2 0 01-2 2H7a2 2 0 01-2-2V6a2 2 0 012-2h2" />
+      </svg>
+      <h2>Painel do Agente</h2>
+    </div>
+
+    <div class="loading">Carregando...</div>
+
+    <table class="pedidos-table hidden">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Cliente</th>
+          <th>Carro</th>
+          <th>Status</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody id="pedidos-body"></tbody>
+    </table>
+  </div>
+</div>
+
+<script>
+async function carregarPedidos() {
+  const loading = document.querySelector(".loading");
+  const tabela = document.querySelector(".pedidos-table");
+  const tbody = document.getElementById("pedidos-body");
+
+  const resp = await fetch("consultarBasePedidos.php");
+  const pedidos = await resp.json();
+
+  loading.style.display = "none";
+  tabela.classList.remove("hidden");
+  tbody.innerHTML = "";
+
+  pedidos.forEach(p => {
+    const tr = document.createElement("tr");
+    tr.innerHTML = `
+      <td>${p.id}</td>
+      <td>${p.marca} ${p.modelo}</td>
+      <td>${p.placa}</td>
+      <td>
+        <select id="status-${p.id}">
+          <option value="Pendente">Pendente</option>
+          <option value="Andamento">Andamento</option>
+          <option value="Realizado">Realizado</option>
+          <option value="Finalizado">Finalizado</option>
+        </select>
+      </td>
+      <td>
+        <button class="btn btn-save" onclick="salvarStatus(${p.id})">Salvar</button>
+      </td>
+    `;
+    tbody.appendChild(tr);
+  });
+}
+
+async function salvarStatus(id){
+  const select = document.getElementById(`status-${id}`);
+  const status = select.value;
+
+  const formData = new FormData();
+  formData.append("id", id);
+  formData.append("status", status);
+
+  const resp = await fetch("salvarPainelPedido.php", { method:"POST", body: formData });
+  alert(await resp.text());
+}
+
+carregarPedidos();
+</script>
+</body>
+</html>

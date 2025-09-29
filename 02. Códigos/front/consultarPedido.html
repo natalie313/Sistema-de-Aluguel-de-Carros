@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Consultar Pedidos</title>
+<link rel="stylesheet" href="consultarPedido.css">
+<style>
+  .hidden { display: none; }
+  table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+  th, td { border: 1px solid #ccc; padding: 8px; text-align: center; }
+  .btn { cursor: pointer; padding: 6px 12px; border-radius: 6px; border: none; margin: 0 2px; }
+  .btn-edit { background: #fbbf24; color: white; }
+  .btn-delete { background: #ef4444; color: white; }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="card">
+    <div class="header">
+      <span class="icon">✔️</span>
+      <h2>Consultar Pedidos</h2>
+    </div>
+
+    <div id="loading">Carregando...</div>
+    <table id="tabela-pedidos" class="hidden">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Marca</th>
+          <th>Modelo</th>
+          <th>Ano</th>
+          <th>Placa</th>
+          <th>Data Início</th>
+          <th>Data Fim</th>
+          <th>Crédito</th>
+          <th>Banco</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody id="pedidos-body"></tbody>
+    </table>
+  </div>
+</div>
+
+<script>
+async function carregarPedidos() {
+  const loading = document.getElementById("loading");
+  const tabela = document.getElementById("tabela-pedidos");
+  const tbody = document.getElementById("pedidos-body");
+
+  const resp = await fetch("consultarPedido.php");
+  const pedidos = await resp.json();
+
+  loading.style.display = "none";
+  tabela.classList.remove("hidden");
+  tbody.innerHTML = "";
+
+  pedidos.forEach(p => {
+    const tr = document.createElement("tr");
+    tr.innerHTML = `
+      <td>${p.id}</td>
+      <td>${p.marca}</td>
+      <td>${p.modelo}</td>
+      <td>${p.ano}</td>
+      <td>${p.placa}</td>
+      <td>${p.dataInicio}</td>
+      <td>${p.dataFim}</td>
+      <td>${p.credito}</td>
+      <td>${p.banco}</td>
+      <td>
+        <button class="btn btn-edit" onclick="editarPedido(${p.id})">✏️</button>
+        <button class="btn btn-delete" onclick="deletarPedido(${p.id})">🗑️</button>
+      </td>
+    `;
+    tbody.appendChild(tr);
+  });
+}
+
+async function deletarPedido(id){
+  if(!confirm("Deseja deletar este pedido?")) return;
+  const formData = new FormData();
+  formData.append("id", id);
+  const resp = await fetch("deletarPedido.php", { method:"POST", body: formData });
+  alert(await resp.text());
+  carregarPedidos();
+}
+
+async function editarPedido(id){
+  const linha = prompt("Digite os dados separados por vírgula:\nmarca,modelo,ano,placa,dataInicio,dataFim,credito, banco");
+  if(!linha) return;
+  const valores = linha.split(",");
+  const formData = new FormData();
+  formData.append("id", id);
+  formData.append("marca", valores[0] ?? "");
+  formData.append("modelo", valores[1] ?? "");
+  formData.append("ano", valores[2] ?? "");
+  formData.append("placa", valores[3] ?? "");
+  formData.append("dataInicio", valores[4] ?? "");
+  formData.append("dataFim", valores[5] ?? "");
+  formData.append("credito", (valores[6] ?? "").trim().toLowerCase() === "sim" ? 1 : 0);
+  formData.append("banco", valores[7] ?? "");
+
+  const resp = await fetch("editarPedido.php", { method:"POST", body: formData });
+  alert(await resp.text());
+  carregarPedidos();
+}
+
+carregarPedidos();
+</script>
+</body>
+</html>

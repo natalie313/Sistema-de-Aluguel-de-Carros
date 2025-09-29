@@ -1,0 +1,94 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f9;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+  padding: 32px; /* aumentei um pouco o padding interno */
+  border: 1px solid #ddd;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 12px; /* maior espaçamento entre ícone e título */
+  margin-bottom: 28px; /* mais espaçamento antes da grid */
+}
+
+.header .icon {
+  color: #7e3af2;
+  font-size: 20px;
+}
+
+.header h2 {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 24px; /* campos mais afastados */
+}
+
+input[type="text"],
+input[type="date"] {
+  border: 1px solid #ccc;
+  padding: 16px; /* padding maior para sensação de espaço */
+  border-radius: 8px;
+  width: 100%;
+  font-size: 16px;
+  margin-bottom: 12px; /* espaçamento extra abaixo do input */
+}
+
+.extras {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* mais espaçamento entre checkboxes */
+  margin-top: 24px;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn {
+  background: #7e3af2;
+  color: #fff;
+  border: none;
+  padding: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 28px;
+  width: 100%;
+  transition: background 0.2s;
+}
+
+.btn:hover {
+  background: #682bd7;
+}
+
+.msg {
+  margin-top: 16px;
+  font-size: 14px;
+}
+
+.success {
+  color: green;
+  font-weight: bold;
+}

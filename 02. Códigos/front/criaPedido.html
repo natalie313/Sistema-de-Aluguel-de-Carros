@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Criar Pedido</title>
+  <link rel="stylesheet" href="criarPedido.css">
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="header">
+        <span class="icon">➕</span>
+        <h2>Criar Pedido</h2>
+      </div>
+
+      <form id="pedidoForm">
+        <div class="grid">
+          <input type="text" name="marca" placeholder="Marca" required>
+          <input type="text" name="modelo" placeholder="Modelo" required>
+          <input type="text" name="ano" placeholder="Ano" required>
+          <input type="text" name="placa" placeholder="Placa" required>
+          <input type="date" name="dataInicio" required>
+          <input type="date" name="dataFim">
+        </div>
+
+        <div class="extras">
+          <label class="checkbox">
+            <input type="checkbox" name="credito">
+            Contrato com crédito
+          </label>
+          <input type="text" name="banco" placeholder="Banco">
+        </div>
+
+        <button type="submit" class="btn">Enviar Pedido</button>
+        <div id="msg" class="msg"></div>
+      </form>
+    </div>
+  </div>
+
+  <script>
+const form = document.getElementById("pedidoForm");
+const msg = document.getElementById("msg");
+
+form.addEventListener("submit", async (e) => {
+  e.preventDefault();
+  msg.textContent = "";
+  msg.classList.remove("success");
+  msg.classList.remove("error");
+
+  const formData = new FormData(form);
+
+  try {
+    const resp = await fetch("salvarPedido.php", {
+      method: "POST",
+      body: formData
+    });
+
+    const texto = await resp.text();
+    if(texto.includes("sucesso")) {
+      msg.textContent = texto;
+      msg.classList.add("success");
+      form.reset();
+    } else {
+      msg.textContent = texto;
+      msg.classList.add("error");
+    }
+
+  } catch (err) {
+    msg.textContent = "Erro no servidor";
+    msg.classList.add("error");
+    console.error(err);
+  }
+});
+</script>
+</body>
+</html>
